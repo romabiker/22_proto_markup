@@ -1,0 +1,45 @@
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    /* margin-left: auto; margin-right: auto; */
+}
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.breadcrumb  {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    list-style: none;
+    background-color: white;
+    /*border-radius: 4px;*/
+  }
+
+.breadcrumb li {
+    font-size: 24px;
+
+}
+
+.page-header {
+  border-bottom: 0;
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    /* margin-left: auto; margin-right: auto; */
+}
+/* Padding below the footer and lighter body text */
+#ordersRef {
+  margin-bottom: 20px;
+}

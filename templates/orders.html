@@ -1,0 +1,60 @@
+{% extends '_base.html' %}
+
+{% block style %}
+    <link href="static/css/custom_orders.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img alt="Brand" src="static/img/brand.png">
+          </a>
+      </div>
+      
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12">
+           <div class="page-header col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12">
+              <h2 class="text-left">ЗАЯВКИ</h2>
+            </div>
+            {% for count in range(10) %}
+                {% set count = count %}
+                {% include "_order.html" %}
+            {% endfor %}
+          </div>
+          <div class="class=col-lg-6 col-lg-offset-5 col-md-8 col-md-offset-6 col-sm-9 col-sm-offset-4 col-xs-9 col-xs-offset-3">
+            <button id="show-more" type="button" href="" class="btn btn-default btn-md">ПОКАЗАТЬ ЕЩЕ</button>
+          </div>
+
+          <div class="col-lg-6 col-lg-offset-5 col-md-8 col-md-offset-5 col-sm-10 col-sm-offset-4 col-xs-10 col-xs-offset-2">
+            <nav aria-label="Page navigation" class="pagination">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+    </div>
+
+</div>
+
+    {% include '_supplier_form.html' %}
+
+{% endblock %}

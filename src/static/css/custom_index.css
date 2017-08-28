@@ -1,0 +1,99 @@
+
+body {
+  min-height: 2500px;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    /* margin-left: auto; margin-right: auto; */
+}
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.breadcrumb  {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    list-style: none;
+    background-color: white;
+    /*border-radius: 4px;*/
+  }
+
+.breadcrumb li {
+    font-size: 24px;
+
+}
+
+.page-header {
+  border-bottom: 0;
+}
+
+#orders-button {
+  border-radius: 15px;
+  margin-bottom: 60px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+}
+/*.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}*/
+
+/* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 792px) {
+  .featurette-heading {
+    margin-top: 80px;
+  }
+}
+
+#leave-reaction {
+  margin-top: 140px;
+}
+
+#supplier-form  {
+    background-color: #f5f5f5;
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
