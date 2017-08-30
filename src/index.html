@@ -41,7 +41,7 @@
 
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
+      <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -75,15 +75,14 @@
               </li>
             </ul>
           <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Леонид Федорович<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="cabinet.html">Личный кабинет</a></li>
-              <li><a href="#">Профиль</a></li>
-              <li><a href="#">Настройки</a></li>
-            </ul>
-            <li><a href="../navbar-fixed-top/">Выход</a></li>
-          </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Леонид Федорович<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="cabinet.html">Личный кабинет</a></li>
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Настройки</a></li>
+              </ul>
+              <li><a href="#">Выход</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -144,7 +143,7 @@
               </div>
             </div>
             <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10 col-xs-offset-2 col-xs-10">
+              <div class="col-sm-offset-2 col-sm-9 col-xs-offset-2 col-xs-10">
                 <select id="region" class="form-control">
                   <option value="one">Новосибирская область</option>
                   <option value="one">Красноярский край</option>
@@ -161,31 +160,29 @@
                 </select>
               </div>
             </div>
-            <div class="form-group">
-              <div class="col-sm-12">
-                <label for="inputDescription" class="col-sm-2 col-xs-2  control-label">Описание</label>
-                <div class="col-sm-8  col-xs-9">
-                  <textarea type="text" class="form-control" id="inputDescription" rows="3"></textarea>
+            <div class="form-group col-sm-12">
+                <label for="inputDescription" class="col-sm-2  control-label">Описание</label>
+                <div class="col-sm-10  ">
+                  <textarea class="form-control" id="inputDescription" rows="3"></textarea>
                   <p class="text-muted">Пример: нужно фбс 24.4.6 50 шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое</p>
                 </div>
-              </div>
             </div>
 
               <div class="form-group col-sm-6">
-                <label for="inputTel" class="col-xs-2 col-sm-4 text-right control-label">Телефон</label>
-                <div class="col-xs-8">
+                <label for="inputTel" class="col-xs-4 col-sm-4 text-right control-label">Телефон</label>
+                <div class="col-xs-8 col-sm-8">
                   <input type="tel" class="form-control" id="inputTel">
                 </div>
               </div>
               <div class="form-group col-sm-6">
-                <label for="inputName" class="col-xs-2 text-right col-sm-2 control-label">Имя</label>
+                <label for="inputName" class="col-xs-4 text-right col-sm-2 control-label">Имя</label>
                 <div class="col-xs-8 col-sm-8">
                   <input type="text" class="form-control" id="inputName">
                 </div>
               </div>
             <div class="form-group">
-              <div class="col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9">
-                <button type="submit" class="btn  btn-default btn-lg">ОПУБЛИКОВАТЬ ЗАЯВКУ</button>
+              <div class="col-sm-offset-3 col-sm-9 col-xs-offset-2 col-xs-9">
+                <button type="submit" class="btn  btn-default btn-md">ОПУБЛИКОВАТЬ ЗАЯВКУ</button>
               </div>
             </div>
           </form>
@@ -200,11 +197,13 @@
                 
                 <div class="card col-md-12 col-sm-12 col-xs-12">
   <div class="card-body">
-    <div class="text-muted">вчера, в 21.00</div>
-    <div class="col-4 pull-right">
-      <form class="form">
-        <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> В закладки</button>
-      </form>
+  <div class="row">
+      <div class="col-sm-9 col-xs-12 text-muted">вчера, в 21.00</div>
+      <div class="col-sm-3 pull-right">
+        <form class="form">
+          <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> В закладки</button>
+        </form>
+      </div>
     </div>
     <p class="card-text">60 шт ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
     <p>Алексей</p>
@@ -224,11 +223,13 @@
                 
                 <div class="card col-md-12 col-sm-12 col-xs-12">
   <div class="card-body">
-    <div class="text-muted">вчера, в 21.00</div>
-    <div class="col-4 pull-right">
-      <form class="form">
-        <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> В закладки</button>
-      </form>
+  <div class="row">
+      <div class="col-sm-9 col-xs-12 text-muted">вчера, в 21.00</div>
+      <div class="col-sm-3 pull-right">
+        <form class="form">
+          <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> В закладки</button>
+        </form>
+      </div>
     </div>
     <p class="card-text">60 шт ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
     <p>Алексей</p>
@@ -248,11 +249,13 @@
                 
                 <div class="card col-md-12 col-sm-12 col-xs-12">
   <div class="card-body">
-    <div class="text-muted">вчера, в 21.00</div>
-    <div class="col-4 pull-right">
-      <form class="form">
-        <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> В закладки</button>
-      </form>
+  <div class="row">
+      <div class="col-sm-9 col-xs-12 text-muted">вчера, в 21.00</div>
+      <div class="col-sm-3 pull-right">
+        <form class="form">
+          <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> В закладки</button>
+        </form>
+      </div>
     </div>
     <p class="card-text">60 шт ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
     <p>Алексей</p>
@@ -272,11 +275,13 @@
                 
                 <div class="card col-md-12 col-sm-12 col-xs-12">
   <div class="card-body">
-    <div class="text-muted">вчера, в 21.00</div>
-    <div class="col-4 pull-right">
-      <form class="form">
-        <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> В закладки</button>
-      </form>
+  <div class="row">
+      <div class="col-sm-9 col-xs-12 text-muted">вчера, в 21.00</div>
+      <div class="col-sm-3 pull-right">
+        <form class="form">
+          <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> В закладки</button>
+        </form>
+      </div>
     </div>
     <p class="card-text">60 шт ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
     <p>Алексей</p>
@@ -294,7 +299,7 @@
 </div>
             
             <div class="col-xs-offset-2">
-              <a id="orders-button" type="button" href="orders.html" class="btn btn-default btn-md">ПОСМОТРЕТЬ ВСЕ ЗАЯВКИ</a>
+              <a id="orders-button"  href="orders.html" class="btn btn-default btn-md">ПОСМОТРЕТЬ ВСЕ ЗАЯВКИ</a>
             </div>
         </div>
 
@@ -358,7 +363,7 @@
             </div>
             <form>
               <div class="modal-body">
-                <textarea type="text" class="form-control" id="reaction-text" rows="4"></textarea>
+                <textarea class="form-control" id="reaction-text" rows="4"></textarea>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
@@ -377,7 +382,7 @@
       </div>
 
       <div class="col-lg-5 col-md-5 col-md-offset-1 col-xs-11 col-xs-offset-1">
-            <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66</p>
+            <p>Для доступа к телефонам покупателей заполните форму или позвоните нам <span class="text-nowrap">+7 999 888-77-66</span></p>
             <p>Текст с дополнительной информацией по условиям сотрудничества</p>
             <p>Возможно стоит вынести его на отдельную страницу</p>
             <p>Текст с дополнительной информацией по условиям сотрудничества</p>
@@ -386,35 +391,35 @@
 
       <div class="col-lg-5 col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
 
-        <form class="form-horizontal text-right">
+        <form class="form-horizontal">
         
           <div class="form-group col-sm-12">
-            <label for="inputCompany" class="col-sm-3 col-xs-4 control-label">Организация</label>
-            <div class="col-sm-8 col-xs-8">
+            <label for="inputCompany" class="col-sm-4 col-xs-4 control-label">Организация</label>
+            <div class="col-sm-8 col-xs-12">
               <input type="text" class="form-control" id="inputCompany">
           </div>
           </div>
           <div class="form-group col-sm-12">
-            <label for="InputTel1" class="col-sm-3 col-xs-4 control-label">Телефон</label>
-            <div class="col-sm-8 col-xs-8">
+            <label for="InputTel1" class="col-sm-4 col-xs-4 control-label">Телефон</label>
+            <div class="col-sm-8 col-xs-12">
             <input type="tel" class="form-control" id="InputTel1">
           </div>
           </div>
 
           <div class="form-group col-sm-12">
-            <label for="InputEmail1" class="col-sm-3 col-xs-4 control-label">Email</label>
-            <div class="col-sm-8 col-xs-8">
+            <label for="InputEmail1" class="col-sm-4 col-xs-4 control-label">Email</label>
+            <div class="col-sm-8 col-xs-12">
             <input type="email" class="form-control" id="InputEmail1">
             </div>
           </div>
-            <div class="form-group   col-sm-12">
-              <label for="inputName1" class="col-sm-3 col-xs-4  control-label">Имя</label>
-              <div class="col-sm-8 col-xs-8">
+            <div class="form-group col-sm-12">
+              <label for="inputName1" class="col-sm-4 col-xs-4  control-label">Имя</label>
+              <div class="col-sm-8 col-xs-12">
                 <input type="text" class="form-control" id="inputName1">
               </div>
             </div>
           <div class="form-group  col-sm-12 text-center">
-            <div class="col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-7">
+            <div class="col-sm-offset-4 col-sm-6  col-xs-6">
               <button type="submit" class="btn btn-default btn-md">ОТПРАВИТЬ ИНФОРМАЦИЮ</button>
             </div>
           </div>

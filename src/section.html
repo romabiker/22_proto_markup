@@ -41,7 +41,7 @@
 
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
+      <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -75,15 +75,14 @@
               </li>
             </ul>
           <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Леонид Федорович<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="cabinet.html">Личный кабинет</a></li>
-              <li><a href="#">Профиль</a></li>
-              <li><a href="#">Настройки</a></li>
-            </ul>
-            <li><a href="../navbar-fixed-top/">Выход</a></li>
-          </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Леонид Федорович<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="cabinet.html">Личный кабинет</a></li>
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Настройки</a></li>
+              </ul>
+              <li><a href="#">Выход</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -307,7 +306,7 @@
       </div>
 
       <div class="col-lg-5 col-md-5 col-md-offset-1 col-xs-11 col-xs-offset-1">
-            <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66</p>
+            <p>Для доступа к телефонам покупателей заполните форму или позвоните нам <span class="text-nowrap">+7 999 888-77-66</span></p>
             <p>Текст с дополнительной информацией по условиям сотрудничества</p>
             <p>Возможно стоит вынести его на отдельную страницу</p>
             <p>Текст с дополнительной информацией по условиям сотрудничества</p>
@@ -316,35 +315,35 @@
 
       <div class="col-lg-5 col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
 
-        <form class="form-horizontal text-right">
+        <form class="form-horizontal">
         
           <div class="form-group col-sm-12">
-            <label for="inputCompany" class="col-sm-3 col-xs-4 control-label">Организация</label>
-            <div class="col-sm-8 col-xs-8">
+            <label for="inputCompany" class="col-sm-4 col-xs-4 control-label">Организация</label>
+            <div class="col-sm-8 col-xs-12">
               <input type="text" class="form-control" id="inputCompany">
           </div>
           </div>
           <div class="form-group col-sm-12">
-            <label for="InputTel1" class="col-sm-3 col-xs-4 control-label">Телефон</label>
-            <div class="col-sm-8 col-xs-8">
+            <label for="InputTel1" class="col-sm-4 col-xs-4 control-label">Телефон</label>
+            <div class="col-sm-8 col-xs-12">
             <input type="tel" class="form-control" id="InputTel1">
           </div>
           </div>
 
           <div class="form-group col-sm-12">
-            <label for="InputEmail1" class="col-sm-3 col-xs-4 control-label">Email</label>
-            <div class="col-sm-8 col-xs-8">
+            <label for="InputEmail1" class="col-sm-4 col-xs-4 control-label">Email</label>
+            <div class="col-sm-8 col-xs-12">
             <input type="email" class="form-control" id="InputEmail1">
             </div>
           </div>
-            <div class="form-group   col-sm-12">
-              <label for="inputName1" class="col-sm-3 col-xs-4  control-label">Имя</label>
-              <div class="col-sm-8 col-xs-8">
+            <div class="form-group col-sm-12">
+              <label for="inputName1" class="col-sm-4 col-xs-4  control-label">Имя</label>
+              <div class="col-sm-8 col-xs-12">
                 <input type="text" class="form-control" id="inputName1">
               </div>
             </div>
           <div class="form-group  col-sm-12 text-center">
-            <div class="col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-7">
+            <div class="col-sm-offset-4 col-sm-6  col-xs-6">
               <button type="submit" class="btn btn-default btn-md">ОТПРАВИТЬ ИНФОРМАЦИЮ</button>
             </div>
           </div>
