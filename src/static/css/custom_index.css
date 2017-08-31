@@ -9,6 +9,12 @@
     /* margin-left: auto; margin-right: auto; */
 }
 /* Padding below the footer and lighter body text */
+.col-xy-center-block {
+    float: none;
+    display: block;
+    margin: auto auto;
+    /* margin-left: auto; margin-right: auto; */
+}
 
 body {
   color: #5a5a5a;
